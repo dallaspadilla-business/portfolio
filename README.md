@@ -1,5 +1,3 @@
 # Portfolio
-
-## Includes
-### * Resume
-### * Git Repo Project Links
+- Resume
+- Git Repo Project Links
