@@ -8,8 +8,8 @@ $my-theme: mat.define-theme(
       theme-type: light,
     ),
     typography: (
-      brand-family: 'Roboto, Helvetica Neue, sans-serif',
-      plain-family: 'Roboto, Helvetica Neue, sans-serif',
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
       bold-weight: 700,
       medium-weight: 500,
       regular-weight: 300,
@@ -20,10 +20,20 @@ $my-theme: mat.define-theme(
   )
 );
 
-html {
-  @include mat.all-component-themes($my-theme);
+// ✅ Apply all component themes
+@include mat.all-component-themes($my-theme);
+
+// ✅ Apply typography globally (no selector wrapper)
+@include mat.typography-hierarchy($my-theme);
+
+.mat-typography {
+  @include mat.typography-hierarchy($my-theme);
 }
 
-body {
-  @include mat.typography-hierarchy($my-theme);
+:root {
+  @include mat.expansion-overrides(
+    (
+      container-elevation-shadow: none,
+    )
+  );
 }
