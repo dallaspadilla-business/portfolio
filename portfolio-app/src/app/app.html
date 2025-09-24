@@ -2,12 +2,27 @@
   <div style="padding: 1em">
     <section class="contact-info">
       <h1>Dallas Padilla</h1>
-      <h3>Software Engineer</h3>
+      <h3>Full-Stack Software Engineer</h3>
       <div style="display: flex; flex-direction: column; gap: 0">
-        <a>dallas.padilla@icloud.com</a>
-        <a>360-790-6623</a>
-        <a>GitHub</a>
-        <a>LinkedIn</a>
+        <div style="display: flex; align-items: center; gap: 8px">
+          <mat-icon>email</mat-icon>
+          <a href="mailto:dallas.padilla@icloud.com">dallas.padilla@icloud.com</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0">
+          <div style="display: flex; align-items: center; gap: 8px">
+            <mat-icon>phone</mat-icon>
+            <a href="tel:+13607906623">(360) 790-6623</a>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i class="fab fa-github fa-2x"></i>
+          <a href="https://github.com/dallaspadilla-business" target="_blank">GitHub</a>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <a href="https://linkedin.com/in/dallasepadilla" target="_blank">LinkedIn</a>
+        </div>
       </div>
     </section>
     <section class="about">
@@ -38,74 +53,88 @@
       <h3>Education</h3>
       <div>Bachelor of Science in Computer Science<br />Washington State University, Dec. 2021</div>
     </section>
-    <section class="experience">
+    <section class="experience" style="display: flex; flex-direction: column; gap: 1em">
       <h3>Experience</h3>
-      <div>
-        <h4>Enchoice - 1.5 yrs</h4>
-        <ul>
-          <li>
-            Played a key role in full-stack development, building Angular/React frontends,
-            implementing Spring and .NET APIs, and managing MS SQL and MongoDB databases.
-          </li>
-          <li>
-            Delivered new features and resolved bugs on schedule, balancing quality and velocity in
-            fast-paced development cycles.
-          </li>
-          <li>
-            Contributed to updating Azure CI / CD Pipelines and managed a EC2 instance that
-            supported development workflows.
-          </li>
-          <li>
-            Managed concurrent development initiatives across multiple codebases, maintaing momentum
-            on feature work, bug fixes, and stakeholder requests.
-          </li>
-          <li>
-            Collaborated with project managers to articulate high-level goals and technical
-            direction.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4>IBM - 1.5 yrs</h4>
-        <ul>
-          <li>
-            Contributed to feature development of Angular and React frontends, redesigning HTML
-            structure and CSS styling.
-          </li>
-          <li>
-            Orchestrated Quality Assurance team testing scripts, defining user stories and
-            discussing desired behaviors, and later implementing proposed fixes.
-          </li>
-          <li>
-            Discussed individual bugs with end users and maintained correspondence until resolution.
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4>F5 Networks via WSU Senior Software Design Paternship - 1 yr</h4>
-        <ul>
-          <li>
-            Designed and developed iOS App to capture telemetry data used for diagnosing connection
-            issues from iOS devices.
-          </li>
-          <li>Integrated CocoaPods necessary for traceroute using Objective-C.</li>
-        </ul>
-      </div>
-      <div>
-        <h4>BadukApp - 2.5 yrs</h4>
-        <ul>
-          <li>
-            Over multiple prototypes, designed and developed an iOS app for messaging, networking,
-            and playing Baduk.
-          </li>
-          <li>Designed game algorithm and scoring algorithm to update game board.</li>
-          <li>
-            Researched oppurtunities for Neural Networks to assist in predicting end states of Baduk
-            Board to help assist player learning oppurtunities.
-          </li>
-          <li>Developed comprehensive testing suite for Baduk game algorithm.</li>
-        </ul>
-      </div>
+      <mat-card appearance="outlined">
+        <mat-card-header>
+          <mat-card-title>Enchoice - 1.5 yrs</mat-card-title>
+          <mat-card-subtitle>Software Developer</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-list role="list">
+            <mat-list-item role="listitem">
+              &bull; Played a key role in full-stack development, building Angular/React frontends,
+              implementing Spring and .NET APIs, and managing MS SQL and MongoDB databases.
+            </mat-list-item>
+            <mat-list-item role="listitem"
+              >&bull; Delivered new features and resolved bugs on schedule, balancing quality and
+              velocity in fast-paced development cycles.</mat-list-item
+            >
+            <mat-list-item role="listitem"
+              >&bull; Contributed to updating Azure CI / CD Pipelines and managed a EC2 instance
+              that supported development workflows.</mat-list-item
+            >
+            <mat-list-item role="listitem">
+              &bull; Managed concurrent development initiatives across multiple codebases, maintaing
+              momentum on feature work, bug fixes, and stakeholder requests.
+            </mat-list-item>
+            <mat-list-item role="listitem">
+              &bull; Collaborated with project managers to articulate high-level goals and technical
+              direction.
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+      <mat-card appearance="outlined">
+        <mat-card-header>IBM - 1.5 yrs</mat-card-header>
+        <mat-card-content>
+          <ul>
+            <li>
+              Contributed to feature development of Angular and React frontends, redesigning HTML
+              structure and CSS styling.
+            </li>
+            <li>
+              Orchestrated Quality Assurance team testing scripts, defining user stories and
+              discussing desired behaviors, and later implementing proposed fixes.
+            </li>
+            <li>
+              Discussed individual bugs with end users and maintained correspondence until
+              resolution.
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+      <mat-card appearance="outlined">
+        <mat-card-header
+          >F5 Networks via WSU Senior Software Design Paternship - 1 yr</mat-card-header
+        >
+        <mat-card-content>
+          <ul>
+            <li>
+              Designed and developed iOS App to capture telemetry data used for diagnosing
+              connection issues from iOS devices.
+            </li>
+            <li>Integrated CocoaPods necessary for traceroute using Objective-C.</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+      <mat-card appearance="outlined">
+        <mat-card-header>BadukApp - 2 yrs</mat-card-header>
+        <mat-card-content>
+          <ul>
+            <li>
+              Over multiple prototypes, designed and developed an iOS app for messaging, networking,
+              and playing Baduk.
+            </li>
+            <li>Designed game algorithm and scoring algorithm to update game board.</li>
+            <li>
+              Researched oppurtunities for Neural Networks to assist in predicting end states of
+              Baduk Board to help assist player learning oppurtunities.
+            </li>
+            <li>Developed comprehensive testing suite for Baduk game algorithm.</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
     </section>
   </div>
 
