@@ -1,0 +1,39 @@
+@use '@angular/material' as mat;
+
+$my-theme: mat.define-theme(
+  (
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+      theme-type: light,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+      bold-weight: 700,
+      medium-weight: 500,
+      regular-weight: 300,
+    ),
+    density: (
+      scale: -4,
+    ),
+  )
+);
+
+// ✅ Apply all component themes
+@include mat.all-component-themes($my-theme);
+
+// ✅ Apply typography globally (no selector wrapper)
+@include mat.typography-hierarchy($my-theme);
+
+.mat-typography {
+  @include mat.typography-hierarchy($my-theme);
+}
+
+:root {
+  @include mat.expansion-overrides(
+    (
+      container-elevation-shadow: none,
+    )
+  );
+}
