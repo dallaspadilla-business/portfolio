@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+
+.home-card {
+  background-color: #64b6f7;
+}
+
+.name-card {
+  display: grid;
+  grid-auto-rows: min-content;
+  justify-content: center;
+  position: relative;
+  top: -4.3rem;
+}
