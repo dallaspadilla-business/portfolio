@@ -20,6 +20,26 @@ $my-theme: mat.define-theme(
   )
 );
 
+$my-dark-theme: mat.define-theme(
+  (
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+      theme-type: dark,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+      bold-weight: 700,
+      medium-weight: 500,
+      regular-weight: 300,
+    ),
+    density: (
+      scale: -4,
+    ),
+  )
+);
+
 // ✅ Apply all component themes
 @include mat.all-component-themes($my-theme);
 
@@ -36,4 +56,14 @@ $my-theme: mat.define-theme(
       container-elevation-shadow: none,
     )
   );
+}
+
+.light-theme {
+  @include mat.all-component-themes($my-theme);
+  @include mat.typography-hierarchy($my-theme);
+}
+
+.dark-theme {
+  @include mat.all-component-themes($my-dark-theme);
+  @include mat.typography-hierarchy($my-dark-theme);
 }
