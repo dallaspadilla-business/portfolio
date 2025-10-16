@@ -1,0 +1,17 @@
+@use '@angular/material' as mat;
+
+.home-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url('../../assets/IMG_9127.png');
+  background-repeat: no-repeat; /* prevents tiling */
+  background-size: cover; /* scales image to cover the element */
+  background-position: center; /* centers the image */
+}
+
+.name-card {
+  display: grid;
+  grid-auto-rows: min-content;
+  justify-content: center;
+  position: relative;
+  top: -4.3rem;
+}
